@@ -4,17 +4,21 @@
     font-family: "titulo";
     src: url(RubikDoodleShadow-Regular.ttf) format(truetype);
  }
+ 
+ @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 
+*{
+    margin: 0PX;
+    padding: 0PX;
+}
 :root{
     --cor2:#975B32;
     --cor3:#003F42;
     --cor4:#421B00;  
     --cor5:#001C42;
     --cor6:#420700;
-}
-*{
-    padding: 0px;
-    margin: 0px;
+    --fonte1:'Bebas Neue', sans-serif;
+    --fonte2:'titulo', sans-serif;
 }
 body{
     background-color: var(--cor2);
@@ -31,7 +35,7 @@ header{
     box-shadow: 2px 5px 5px 2px #0000005b;
 }
 header > h1{
-    font-family: 'titulo';
+    font-family: var(--fonte2);
     padding-top: 10px;
     text-align: center;
     color: white;
@@ -62,48 +66,33 @@ nav >a:hover{
     color: white;
     border-radius: 4px;
 }
-main{
-    background-color: var(--cor2);
-    max-width: 800px;
+
+main > h1{
+    padding-top: 30px;
+    font-family: var(--fonte1);
+    text-align: center;
+    font-size: 30px;
+}
+main article{
+    border:6px solid #220401  ;
+    max-width: 1000px;
     margin: auto;
-}
-main h2{
-    font-family: 'titulo';
-    background: linear-gradient(to right, var(--cor2) 0%,var(--cor6) 5%,var(--cor6) 95%,  var(--cor2) 100%);
-    color: white;
-    padding-bottom: 13px;
-    padding-top: 6px;
-    height: 20px;
-    width: 220px;
-    margin-top: 15px;
-    margin-bottom: 15px;
-    text-align: center;
-}
-main p{
-    border-radius: 5px 5px 0px 0px;
     background-color: var(--cor4);
-    color:white;
-    text-indent: 25px;
-    text-align: justify;
-    padding:5px 15px 5px 15px ;
-    line-height: 2;
-    box-shadow: 7px 18px 17px -12px rgba(0, 0, 0, 0.432);
-}
-#p2{
-    border-radius: 0px 0px 5px ;
-}
-footer{
-    padding: 7px;
-    max-width: 800px;
-    background: linear-gradient(to right, var(--cor2) 0%,var(--cor6) 5%,var(--cor6) 95%,  var(--cor2) 100%);
-    text-align: center;
-    color: white;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top:10px ;
+    height: 950px;
+    border-radius: 15px;
 }
 main img{
     display: block;
     margin: auto;
-    min-width: 220px;
+    padding: 10px;
+    max-width: 500px;
+}
+main p{
+    padding-left: 20px ;
+    padding-right: 20px;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    text-indent: 35px;
+    line-height: 30px;
+    text-align: justify;
 }
