@@ -63,8 +63,10 @@ main{
     border-color: var(--cor4);
     margin: 20px auto 0px auto;
     background-color: white;
-    height: 500px;
-    width: 500px;
+    min-height: 500px;
+    max-height: 600px;
+    max-width: 500px;
+    min-width: 300px;
 }
 main img{
     display: block;
