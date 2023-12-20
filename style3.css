@@ -63,14 +63,14 @@ main{
     border-color: var(--cor4);
     margin: 20px auto 0px auto;
     background-color: white;
-    min-height: 500px;
-    max-height: 600px;
-    max-width: 500px;
-    min-width: 300px;
+    max-width: 600px;
+    width: 100%;
 }
 main img{
     display: block;
     margin: auto;
+    max-width: 100%;
+    height: auto;
 }
 main p{
     padding: 15px;
